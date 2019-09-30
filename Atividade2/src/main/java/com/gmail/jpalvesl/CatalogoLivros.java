@@ -4,7 +4,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class CatalogoLivros {
-    private List<Livro> lista = new ArrayList<Livro>();
+    private List<Livro> lista;
+
+    public CatalogoLivros(){
+        lista = new ArrayList<Livro>();
+    }
 
     public boolean adicionarLivro(Livro livro){
         return lista.add(livro);

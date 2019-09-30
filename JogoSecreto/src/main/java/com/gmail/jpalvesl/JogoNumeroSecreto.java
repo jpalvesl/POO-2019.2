@@ -5,9 +5,9 @@ import java.util.Random;
 public class JogoNumeroSecreto {
     private int numeroSecreto;
     private int numeroMaxTentativas;
-    public static final int DEFAULT_TENTATIVAS = 3;
-    public static final int LIMITE_INICIAL = 1;
-    public static final int LIMITE_FINAL = 6;
+    private static final int DEFAULT_TENTATIVAS = 3;
+    private static final int LIMITE_INICIAL = 1;
+    private static final int LIMITE_FINAL = 6;
 
     public JogoNumeroSecreto(int numeroMaxTentaivas) {
         if ( numeroMaxTentaivas >= LIMITE_INICIAL && numeroMaxTentaivas <= LIMITE_FINAL ){
@@ -18,7 +18,8 @@ public class JogoNumeroSecreto {
     }
 
     private void gerarNumeroSecreto(){
-        this.numeroSecreto = LIMITE_INICIAL + ( int ) ( new Random().nextDouble() * LIMITE_FINAL );
+        Random numeroSecreto = new Random();
+        this.numeroSecreto = this.LIMITE_INICIAL + numeroSecreto.nextInt(this.LIMITE_FINAL);
     }
 
     private boolean ehNumeroSecreto(int numero){

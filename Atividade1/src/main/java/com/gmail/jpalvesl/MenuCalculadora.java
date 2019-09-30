@@ -3,7 +3,7 @@ package com.gmail.jpalvesl;
 import java.util.Scanner;
 
 public class MenuCalculadora {
-    Calculadora c1 = new Calculadora();
+    public Calculadora c1 = new Calculadora("Calculadorinha 10/10");
 
 
     public void exibirMenu(){

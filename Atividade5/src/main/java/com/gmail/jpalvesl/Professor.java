@@ -5,6 +5,7 @@ public class Professor extends Funcionario {
 
     public Professor() {
         super();
+        setNumHoras(40);
     }
 
     public Professor(int matricula, String nome, int idade, double salárioBase, int numHoras) {

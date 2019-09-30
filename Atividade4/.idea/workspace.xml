@@ -1,7 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0aacc18c-029c-4168-8ed0-5f2b4abbd0e1" name="Default Changelist" comment="" />
+    <list default="true" id="0aacc18c-029c-4168-8ed0-5f2b4abbd0e1" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../Atividade1/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Atividade2/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Atividade3/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JogoSecreto/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Atividade1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Atividade1/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Atividade1/src/main/java/com/gmail/jpalvesl/Calculadora.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Atividade1/src/main/java/com/gmail/jpalvesl/Calculadora.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Atividade1/src/main/java/com/gmail/jpalvesl/MenuCalculadora.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Atividade1/src/main/java/com/gmail/jpalvesl/MenuCalculadora.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Atividade2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Atividade2/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Atividade2/src/main/java/com/gmail/jpalvesl/CatalogoLivros.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Atividade2/src/main/java/com/gmail/jpalvesl/CatalogoLivros.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Atividade2/src/main/java/com/gmail/jpalvesl/Livro.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Atividade2/src/main/java/com/gmail/jpalvesl/Livro.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Atividade2/src/main/java/com/gmail/jpalvesl/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Atividade2/src/main/java/com/gmail/jpalvesl/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Atividade3/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Atividade3/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Atividade3/src/main/java/com/gmail/jpalvesl/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Atividade3/src/main/java/com/gmail/jpalvesl/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gmail/jpalvesl/Gerente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gmail/jpalvesl/Gerente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gmail/jpalvesl/Professor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gmail/jpalvesl/Professor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JogoSecreto/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../JogoSecreto/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JogoSecreto/src/main/java/com/gmail/jpalvesl/InterfaceGrafica.java" beforeDir="false" afterPath="$PROJECT_DIR$/../JogoSecreto/src/main/java/com/gmail/jpalvesl/InterfaceGrafica.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JogoSecreto/src/main/java/com/gmail/jpalvesl/JogoNumeroSecreto.java" beforeDir="false" afterPath="$PROJECT_DIR$/../JogoSecreto/src/main/java/com/gmail/jpalvesl/JogoNumeroSecreto.java" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,6 +36,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
       <MavenImportingSettings>
@@ -23,7 +47,9 @@
     </option>
   </component>
   <component name="ProjectId" id="1Qr4ovcYnvHhpepPbJTHD95z1iy" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../JogoSecreto/pom.xml" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
@@ -141,5 +167,16 @@
       <updated>1568515561768</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

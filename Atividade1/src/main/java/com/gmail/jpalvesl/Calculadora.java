@@ -1,8 +1,12 @@
 package com.gmail.jpalvesl;
 
 public class Calculadora {
-    private String descrição = "Calculadorinha 10/10";
+    private String descrição;
     private double memoria;
+
+    public Calculadora(String descrição){
+        alterarDescrição(descrição);
+    }
 
     public double somar(double umNumero, double outroNumero){
         double aux = umNumero + outroNumero;

@@ -15,7 +15,8 @@ public class Livro {
         setAutor("Não identificado");
     }
 
-    public Livro(String titulo, String autor, String editora, int lançamento, int edição, int paginas, int id) {
+    public Livro(String titulo, String autor, String editora, int lançamento,
+                 int edição, int paginas, int id) {
         setTitulo(titulo);
         setAutor(autor);
         setEditora(editora);

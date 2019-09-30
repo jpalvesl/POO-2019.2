@@ -5,6 +5,7 @@ public class Gerente extends Funcionario {
 
     public Gerente() {
         super();
+        setComissão(45);
     }
 
     public Gerente(int matricula, String nome, int idade, double salárioBase, double comissão) {
