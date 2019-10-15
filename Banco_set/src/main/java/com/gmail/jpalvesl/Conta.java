@@ -1,5 +1,7 @@
 package com.gmail.jpalvesl;
 
+import java.util.Objects;
+
 public class Conta {
     private double saldo;
     private int numero;
@@ -61,6 +63,21 @@ public class Conta {
 
     public double consultarSaldo(){
         return getSaldo();
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        Conta conta = (Conta) o;
+
+        return getNumero() == conta.getNumero();
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hashCode( getNumero() );
     }
 
     @Override

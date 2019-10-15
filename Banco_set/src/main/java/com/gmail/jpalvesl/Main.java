@@ -1,8 +1,10 @@
 package com.gmail.jpalvesl;
 
 public class Main {
-    Conta c1 = new Conta();
+    public static void main(String[] args) {
+        Conta c1 = new Conta(600, 36, "Amju");
 
-    System.out.println(c1);
+        System.out.println(c1);
+    }
 
 }
