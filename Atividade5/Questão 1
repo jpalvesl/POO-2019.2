@@ -1,0 +1,18 @@
+1- a) Verdadeiro
+   b) Falso, pode ter metodos concretos, porém pode ser instanciada
+   c) Falso, se ela tem ao menos um método avstrato ela deve ser abstrata, cas o contrario não se aplica
+   d) Verdadeiro
+   e) Verdadeiro
+   f) Verdadeiro
+   g) Verdadeiro
+   h) Falso, devemos criar com a keyword Interface
+   i) Falso, devemos criar com a keyword implements
+   j) Verdadeiro
+   k) Falso, todos os métodos são public e abstract 
+   l) Verdadeiro
+   m) Falso, henraça de implementação é feito através de interfaces já henraça de tipo acontece quando um objeto extende metodos e atributos de outra classe
+   n) Verdadeiro
+   o) Falso, a Classe abstrata pode ter construtores
+   p) Verdadeiro
+   q) Verdadeiro
+   r) Falso, podemos chamar apenas metodos iguais ou sobreescritos
