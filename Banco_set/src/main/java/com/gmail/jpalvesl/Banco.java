@@ -15,9 +15,9 @@ public class Banco {
     }
 
 
-    public Conta buscarConta(int numero) {
-        lista.stream();
-        return null;
+    public boolean buscarConta(int numero) {
+        return lista.stream()
+                .anyMatch(conta -> conta.getNumero() == numero);
 
     }
 }

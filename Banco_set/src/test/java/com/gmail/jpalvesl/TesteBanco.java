@@ -70,27 +70,29 @@ public class TesteBanco {
     }
 
     @Test
-    public void buscarCamisaDeveFuncionar(){
+    public void buscarContaDeveFuncionar(){
         // adicionando contas no banco
         banco.adicionarConta( c1 );
         banco.adicionarConta( c2 );
         banco.adicionarConta( c3 );
 
         // auxiliares para guardar o retorno da funcao
-        Conta aux1, aux2, aux3;
+        boolean aux1, aux2, aux3;
         aux1 = banco.buscarConta( 26 );
         aux2 = banco.buscarConta( 10 );
         aux3 = banco.buscarConta( 99 );
 
         // verificando se o retorno foi de acordo com o esperado
-        assertThat( aux1, is( c1 ) );
-        assertThat( aux2, is( c2 ) );
-        assertThat( aux3, is( c3 ) );
+        assertThat( aux1, is( true ) );
+        assertThat( aux2, is( true ) );
+        assertThat( aux3, is( true ) );
     }
 
     @Test
-    public void buscarCamisaNaoDeveFuncionar(){
-
+    public void buscarContaNaoDeveFuncionar(){
+        assertThat( banco.buscarConta(26), is(false) );
+        assertThat( banco.buscarConta(10), is(false) );
+        assertThat( banco.buscarConta(99), is(false) );
     }
 
 
