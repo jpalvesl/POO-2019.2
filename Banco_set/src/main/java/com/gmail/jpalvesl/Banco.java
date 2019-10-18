@@ -3,21 +3,36 @@ package com.gmail.jpalvesl;
 import java.util.*;
 
 public class Banco {
-    Set<Conta> lista = new HashSet<>();
+    private Set<Conta> conjunto = new HashSet<>();
 
 
     public boolean adicionarConta(Conta conta) {
-        return lista.add( conta );
+        return conjunto.add( conta );
     }
 
     public boolean removerConta(Conta conta) {
-        return lista.remove( conta );
+        return conjunto.remove( conta );
     }
 
 
-    public boolean buscarConta(int numero) {
-        return lista.stream()
-                .anyMatch(conta -> conta.getNumero() == numero);
+    public Conta buscarConta(int numero) {
+        /* nao funcionanm "Erro de retorno"
+        lista.iterator()
+                .forEachRemaining( conta -> {
+                    if ( conta.getNumero == numero ) return conta;
+                } );
 
+
+        lista.stream()
+                .forEach( conta -> {
+                    if ( conta.getNumero == numero ) return conta;
+                } );
+        */
+
+        for (Iterator<Conta> it = conjunto.iterator(); it.hasNext(); ){
+            Conta c1 = it.next();
+            if ( c1.getNumero()  == numero ) return c1;
+        }
+        return null;
     }
 }
