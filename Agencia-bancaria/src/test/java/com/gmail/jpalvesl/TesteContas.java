@@ -6,22 +6,20 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class TesteContas {
+    // objetos unicos usados ao longo do teste
+    static Conta c1 = new ContaPoupança("João");
+    static Conta c2 = new ContaCorrente("Pedro");
+
     @Test
     public void getIdTest(){
-        Conta c1 = new ContaPoupança("João");
-        Conta c2 = new ContaCorrente("Pedro");
-
         int id1, id2;
         id1 = c1.getId();
         id2 = c2.getId();
 
-        Assert.assertEquals(1, id2-id1);
+        Assert.assertEquals(1, c1.getId());
     }
-
     @Test
     public void depositarDeveFuncionar(){
-        Conta c1 = new ContaPoupança("João");
-
         boolean aux1, aux2;
 
         aux1 = c1.depositar(10);
@@ -33,8 +31,6 @@ public class TesteContas {
 
     @Test
     public void depositarNaoDeveFuncionar(){
-        Conta c1 = new ContaPoupança("João");
-
         boolean aux1, aux2;
 
         aux1 = c1.depositar(-0.1);
@@ -47,7 +43,6 @@ public class TesteContas {
 
     @Test
     public void sacarDeveFuncionar(){
-        Conta c1 = new ContaPoupança("João");
         c1.depositar(10);
 
         boolean aux1, aux2;
@@ -61,7 +56,7 @@ public class TesteContas {
 
     @Test
     public void sacarNaoDeveFuncionar(){
-        Conta c1 = new ContaPoupança("João");
+        //Conta c1 = new ContaPoupança("João");
         c1.depositar(10);
         c1.sacar(1);
         c1.sacar(1);
@@ -79,9 +74,9 @@ public class TesteContas {
 
     @Test
     public void getTipoTest(){
-        Conta c1, c2;
-        c1 = new ContaPoupança("João");
-        c2 = new ContaCorrente("Pedro");
+        //Conta c1, c2;
+        //c1 = new ContaPoupança("João");
+        //c2 = new ContaCorrente("Pedro");
 
         TipoConta aux1, aux2;
 
