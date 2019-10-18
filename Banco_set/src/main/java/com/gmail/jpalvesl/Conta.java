@@ -66,11 +66,11 @@ public class Conta {
     }
 
     @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
+    public boolean equals(Object outro) {
+        if (this == outro) return true;
+        if (outro == null || getClass() != outro.getClass()) return false;
 
-        Conta conta = (Conta) o;
+        Conta conta = (Conta) outro;
 
         return getNumero() == conta.getNumero();
     }
@@ -78,6 +78,8 @@ public class Conta {
     @Override
     public int hashCode() {
         return Objects.hashCode( getNumero() );
+        // return Objects.hash( getNumero(), ... ); pode ter mais de um argumento
+        // return Integer.hashCode( getNumero() ); outro modo de gerar um hashCode
     }
 
     @Override
