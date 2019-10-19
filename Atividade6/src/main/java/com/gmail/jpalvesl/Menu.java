@@ -9,8 +9,9 @@ public class Menu {
                 "3. Saque                  \n" +
                 "4. Extrato                \n" +
                 "5. Saldo atual            \n" +
-                "6. Sair                   \n" +
-                "  Digite uma opção:         "
+                "6. Visualizar conta       \n" +
+                "7. Sair                   \n" +
+                "Digite uma opção: "
                 ;
     }
 }

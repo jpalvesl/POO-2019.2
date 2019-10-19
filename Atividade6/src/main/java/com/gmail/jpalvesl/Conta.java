@@ -8,7 +8,6 @@ public class Conta {
     private String titular;
     private static final String NOME_DEFAULT = "---sem nome---";
 
-
     public Conta(){
         this(500, 2, NOME_DEFAULT);
     }
@@ -43,22 +42,19 @@ public class Conta {
         this.numero = numero;
     }
 
-    public boolean depositar(double valor){
-        double resultado = getSaldo() - valor;
+    public boolean depositar(double valor) throws QuantiaNegativaException{
+        if ( valor < 0 ) throw new QuantiaNegativaException();
 
-        if ( valor > 0 && resultado >= 0 ){
-            setSaldo(resultado);
-            return true;
-        }
-        return false;
+        setSaldo(getSaldo() + valor);
+        return true;
     }
 
-    public boolean sacar(double valor){
-        if ( valor > 0 ){
-            setSaldo( getSaldo() + valor );
-            return true;
-        }
-        return false;
+    public boolean sacar(double valor) throws QuantiaNegativaException, SaldoInsuficienteException {
+        if ( valor <= 0 ) throw new QuantiaNegativaException();
+        if ( getSaldo() - valor < 0) throw new SaldoInsuficienteException();
+
+        setSaldo(getSaldo() - valor);
+        return true;
     }
 
     public double consultarSaldo(){
@@ -87,5 +83,9 @@ public class Conta {
                 ", numero=" + getNumero() +
                 ", titular=" + getTitular() +
                 '}';
+    }
+
+    public String extrato() {
+        return "";
     }
 }
