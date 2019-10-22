@@ -25,24 +25,24 @@ public class TesteBanco {
         banco.adicionarConta( c2 );
         banco.adicionarConta( c3 );
 
-        assertThat( banco.conjunto, containsInAnyOrder( c1, c2 , c3 ) );
+        assertThat( banco, containsInAnyOrder( c1, c2 , c3 ) );
     }
 
     @Test
     public void adicionarContaNaoDeveFuncionar(){
-        // adicionando as contas no HashSet
+        // adicionando as contas no hashSet
         banco.adicionarConta( c1 );
         banco.adicionarConta( c2 );
         banco.adicionarConta( null ); //nao deve adicionar
         banco.adicionarConta( clone_c1 ); //nao deve adicionar
 
         //assegurando que o clone e null nao estao no HashSet
-        assertThat( banco.conjunto, not( containsInAnyOrder( null, clone_c1 ) ) );
+        assertThat( banco, not( containsInAnyOrder( null, clone_c1 ) ) );
     }
 
     @Test
     public void removerContaDeveFuncionar(){
-        // adicionando contas
+        // adicionando contas hashSet
         banco.adicionarConta( c1 );
         banco.adicionarConta( c2 );
         banco.adicionarConta( c3 );
@@ -53,12 +53,12 @@ public class TesteBanco {
         banco.removerConta( c3 );
 
         // verificando se os itens nao estao no HashSet
-        assertThat( banco.conjunto, not( contains( c1, c2, c3 ) ) );
+        assertThat( banco, not( contains( c1, c2, c3 ) ) );
     }
 
     @Test
     public void removerContaNaoDeveFuncionar(){
-        // adicionando contas
+        // adicionando contas no hashSet
         banco.adicionarConta( c1 );
         banco.adicionarConta( c2 );
 
@@ -66,12 +66,12 @@ public class TesteBanco {
         banco.removerConta( null );
         banco.removerConta( c3 );
 
-        assertThat( banco.conjunto, containsInAnyOrder( c1, c2 ) );
+        assertThat( banco, containsInAnyOrder( c1, c2 ) );
     }
 
     @Test
     public void buscarContaDeveFuncionar(){
-        // adicionando contas no banco
+        // adicionando contas no hashSet
         banco.adicionarConta( c1 );
         banco.adicionarConta( c2 );
         banco.adicionarConta( c3 );
@@ -90,6 +90,7 @@ public class TesteBanco {
 
     @Test
     public void buscarContaNaoDeveFuncionar(){
+        // saber se te como fazer um assert que assegure o erro
         Assert.assertNull( banco.buscarConta(26) );
         Assert.assertNull( banco.buscarConta(10) );
         Assert.assertNull( banco.buscarConta(99) );

@@ -3,7 +3,7 @@ package com.gmail.jpalvesl;
 import java.util.*;
 
 public class Banco implements Iterable<Conta>{
-    public Set<Conta> conjunto = new HashSet<>();
+    private Set<Conta> conjunto = new HashSet<>();
 
 
     public boolean adicionarConta(Conta conta) {
@@ -23,8 +23,8 @@ public class Banco implements Iterable<Conta>{
                 new RuntimeException("Não existe esta conta")); // NoSuchEmementException
 
 
-        // nao funcionanm "Erro de retorno"
-        /*
+
+        /* // nao funcionanm "Erro de retorno"
         // percorrendo com iterador
         conjunto.iterator()
                 .forEachRemaining( conta -> {

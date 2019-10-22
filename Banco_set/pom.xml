@@ -10,9 +10,8 @@
     <packaging>jar</packaging>
 
     <name>Atividade5</name>
-    <!-- FIXME change it to the project's website -->
     <url>http://www.meusite.com</url>
-    <description>Adicionando a classe telefonista e tornando a classe funcionario abstrata</description>
+    <description>Criando banco com a estrutura de dados hashSet para armazenar as contas</description>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
