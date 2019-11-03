@@ -1,9 +1,18 @@
 package com.gmail.jpalvesl;
 
+import java.text.Collator;
+import java.util.Comparator;
+
 public class Main
 {
     public static void main( String[] args ) {
+        // comparadores para serem passados como parametro da TreeSet
+        Comparator<Produto> comp1 = Comparator.comparing(Produto::getName);
+        Comparator<Produto> comp2 = Comparator.comparing(Produto::getPrice);
+
+        // Loja esta sendo naturalmente ordenada pelo id
         Loja loja = new Loja();
+
 
         Produto p1 = new Produto(100, "Leite", 3.5);
         Produto p2 = new Produto(1, "Pippo's", 2.0);
