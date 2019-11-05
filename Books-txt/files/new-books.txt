@@ -1,0 +1,10 @@
+id= 128, name= The Adventures of Duck and Scorpion, author= Mary Poppins, type= ebook, price= 10.99
+id= 34, name= The Return of Eagle and Whale, author=  Ana Montana, type= hardback, price= 19.99
+id= 35, name= The Return of Horse and Spider, author= Seth Maven, type= hardback, price= 19.99
+id= 83, name= Fish and Goose an allegory for modern times, author= Borgen Ingent, type= paperback, price= 59.99
+id= 71, name= Cow and Goose Cheat Sheet for Students, author=  Cavin Parrot, type= ebook, price= 5.99
+id= 56, name= My Friend is a Duck, author= Ana Parrot, type= paperback, price= 14.99
+id= 41, name= The Adventures of Falcon and Horse, author= John Livet, type= hardback, price= 18.99
+id= 12, name= More Fun with Rat and Goose, author= Richard Luke, type= paperback, price= 12.99
+id= 28, name= Parrot and Pigeon on Holiday, author= Sir Quackalot, type= ebook, price= 11.99
+id= 62, name= Annotated Notes on the Duck and Goose chronicles, author= Prof. Macaw, type= ebook, price= 8.99
