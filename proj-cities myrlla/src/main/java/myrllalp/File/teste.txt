@@ -1,0 +1,46 @@
+City{sigla=' AK', nome='Anchorage', zipCode= 298610}
+City{sigla=' AL', nome='Birmingham', zipCode= 212038}
+City{sigla=' AR', nome='Conway', zipCode= 62939}
+City{sigla=' AZ', nome='Avondale', zipCode= 78256}
+City{sigla=' CA', nome='Alameda', zipCode= 75641}
+City{sigla=' CO', nome='Arvada', zipCode= 109745}
+City{sigla=' CT', nome='Bridgeport', zipCode= 146425}
+City{sigla=' DC', nome='Washington', zipCode= 632323}
+City{sigla=' FL', nome='Boca Raton', zipCode= 87836}
+City{sigla=' GA', nome='Alpharetta', zipCode= 61981}
+City{sigla=' HI', nome='Honolulu', zipCode= 345610}
+City{sigla=' IA', nome='Ames', zipCode= 60634}
+City{sigla=' ID', nome='Boise', zipCode= 212303}
+City{sigla=' IL', nome='Arlington Heights', zipCode= 75777}
+City{sigla=' IN', nome='Anderson', zipCode= 55554}
+City{sigla=' KS', nome='Lawrence', zipCode= 89512}
+City{sigla=' KY', nome='Bowling Green', zipCode= 60600}
+City{sigla=' LA', nome='Baton Rouge', zipCode= 230058}
+City{sigla=' MA', nome='Boston', zipCode= 636479}
+City{sigla=' MD', nome='Baltimore', zipCode= 621342}
+City{sigla=' MI', nome='Ann Arbor', zipCode= 116121}
+City{sigla=' MN', nome='Blaine', zipCode= 59412}
+City{sigla=' MO', nome='Billings', zipCode= 106954}
+City{sigla=' MS', nome='Gulfport', zipCode= 70113}
+City{sigla=' NC', nome='Asheville', zipCode= 85712}
+City{sigla=' ND', nome='Bismarck', zipCode= 64751}
+City{sigla=' NE', nome='Lincoln', zipCode= 265404}
+City{sigla=' NH', nome='Manchester', zipCode= 110209}
+City{sigla=' NJ', nome='Bayonne', zipCode= 64416}
+City{sigla=' NM', nome='Albuquerque', zipCode= 555417}
+City{sigla=' NV', nome='Henderson', zipCode= 265679}
+City{sigla=' NY', nome='Albany', zipCode= 97904}
+City{sigla=' OH', nome='Akron', zipCode= 198549}
+City{sigla=' OK', nome='Broken Arrow', zipCode= 102019}
+City{sigla=' OR', nome='Beaverton', zipCode= 92680}
+City{sigla=' PA', nome='Allentown', zipCode= 118974}
+City{sigla=' RI', nome='Cranston', zipCode= 80529}
+City{sigla=' SC', nome='Charleston', zipCode= 125583}
+City{sigla=' SD', nome='Rapid', zipCode= 69854}
+City{sigla=' TN', nome='Bartlett', zipCode= 55945}
+City{sigla=' TX', nome='Abilene', zipCode= 118887}
+City{sigla=' UT', nome='Layton', zipCode= 68677}
+City{sigla=' VA', nome='Alexandria', zipCode= 146294}
+City{sigla=' WA', nome='Auburn', zipCode= 73505}
+City{sigla=' WI', nome='Appleton', zipCode= 73016}
+City{sigla=' WY', nome='Casper', zipCode= 57813}
