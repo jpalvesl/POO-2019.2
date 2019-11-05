@@ -84,7 +84,9 @@ public class Main {
                 System.err.println( "Erro não identificado" );
             }
             finally {
-                System.out.println( "Fim da operação\n\n" );
+                input.close();
+                System.out.println( "Scanner sendo fechado" );
+                System.out.println( "Fim da execução do programa\n\n" );
             }
         } while ( opcao != 7 );
 
