@@ -1,4 +1,4 @@
-package myrllalp;
+package com.gmail.jpalvesl;
 
 import static org.junit.Assert.assertTrue;
 
