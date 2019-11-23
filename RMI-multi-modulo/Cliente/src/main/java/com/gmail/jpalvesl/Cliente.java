@@ -10,19 +10,20 @@ public class Cliente
     private static Registry registry;
 
     public static void executarCliente(String host){
-        try {
-            String signo;
-            Scanner input = new Scanner(System.in);
-            Registry registry = LocateRegistry.getRegistry(host);
-            ObjetoRemotoSignos_IF stub = (ObjetoRemotoSignos_IF) registry.lookup("mensagem");
+        String signo = "";
+        Scanner input = new Scanner(System.in);
+        while(!signo.equals("-1")) {
+            try {
+                Registry registry = LocateRegistry.getRegistry(host);
+                ObjetoRemotoSignos_IF stub = (ObjetoRemotoSignos_IF) registry.lookup("mensagem");
 
-            System.out.print("Digite um signo: ");
-            signo = input.nextLine();
-            String resposta = stub.getMensagem(signo);
-            System.out.println("resposta: " + resposta);
-        } catch (Exception e) {
-            System.err.println("Cliente exception: " + e.toString());
-            e.printStackTrace();
+                System.out.print("Digite um signo: ");
+                signo = input.nextLine();
+                String resposta = stub.getMensagem(signo);
+                System.out.println("resposta: " + resposta);
+            } catch (Exception e) {
+                System.err.println("Signo nao existe");
+            }
         }
     }
 
