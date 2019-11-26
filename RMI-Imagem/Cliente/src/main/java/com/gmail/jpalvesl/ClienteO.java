@@ -6,12 +6,11 @@ public class ClienteO {
     private String nome;
     private String idade;
     private String cpf;
-    private static String DEFAULT_STR = "---";
 
     public ClienteO(String nome, String idade, String cpf) {
-        setNome(nome);
-        setIdade(idade);
-        setCpf(cpf);
+        this.nome = nome;
+        this.idade = idade;
+        this.cpf = cpf;
     }
 
     public String getNome() {
@@ -19,9 +18,7 @@ public class ClienteO {
     }
 
     public void setNome(String nome) {
-        nome = DEFAULT_STR;
-        if ( nome != null )
-            this.nome = nome;
+        this.nome = nome;
     }
 
     public String getIdade() {
@@ -29,9 +26,7 @@ public class ClienteO {
     }
 
     public void setIdade(String idade) {
-        idade = DEFAULT_STR;
-        if ( idade != null )
-            this.idade = idade;
+        this.idade = idade;
     }
 
     public String getCpf() {
@@ -39,9 +34,7 @@ public class ClienteO {
     }
 
     public void setCpf(String cpf) {
-        cpf = DEFAULT_STR;
-        if ( cpf != null )
-            this.cpf = cpf;
+        this.cpf = cpf;
     }
 
     @Override

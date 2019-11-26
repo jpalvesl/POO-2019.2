@@ -4,14 +4,11 @@ import java.util.Objects;
 
 public class ClienteO {
     private String nome;
-    private String idade;
-    private String cpf;
-    private static String DEFAULT_STR = "---";
+    private String id;
 
-    public ClienteO(String nome, String idade, String cpf) {
-        setNome(nome);
-        setIdade(idade);
-        setCpf(cpf);
+    public ClienteO(String nome, String id) {
+        this.nome = nome;
+        this.id = id;
     }
 
     public String getNome() {
@@ -19,29 +16,15 @@ public class ClienteO {
     }
 
     public void setNome(String nome) {
-        nome = DEFAULT_STR;
-        if ( nome != null )
-            this.nome = nome;
+        this.nome = nome;
     }
 
-    public String getIdade() {
-        return idade;
+    public String getId() {
+        return id;
     }
 
-    public void setIdade(String idade) {
-        idade = DEFAULT_STR;
-        if ( idade != null )
-            this.idade = idade;
-    }
-
-    public String getCpf() {
-        return cpf;
-    }
-
-    public void setCpf(String cpf) {
-        cpf = DEFAULT_STR;
-        if ( cpf != null )
-            this.cpf = cpf;
+    public void setId(String id) {
+        this.id = id;
     }
 
     @Override
@@ -52,17 +35,16 @@ public class ClienteO {
         ClienteO clienteO = (ClienteO) o;
 
         if (!nome.equals(clienteO.nome)) return false;
-        if (!idade.equals(clienteO.idade)) return false;
-        return cpf.equals(clienteO.cpf);
+        return id.equals(clienteO.id);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(nome, idade, cpf);
+        return Objects.hash(nome, id);
     }
 
     @Override
     public String toString() {
-        return nome + ';' + idade + ';' + cpf;
+        return nome + ';' + id;
     }
 }

@@ -10,21 +10,32 @@ import java.util.*;
 public class Servidor implements ObjetoRemotoData_IF {
     private Set<ClienteO> data = new HashSet<ClienteO>();
 
-
-    public boolean adicionarCliente(ClienteO cliente) throws RemoteException {
-        return data.add(cliente);
+    public Servidor() {
+        ClienteO novoCliente = new ClienteO("João", "17");
+        data.add(novoCliente);
     }
 
-    public boolean removerCliente(ClienteO cliente) throws RemoteException {
-        return data.remove(cliente);
+    public void adicionarCliente() throws RemoteException {
+        ClienteO cliente = new ClienteO("Amju", "10");
+        data.add(cliente);
     }
 
-    public ClienteO buscarCliente(final ClienteO cliente) throws RemoteException {
+    public void removerCliente(int id) throws RemoteException {
+        ClienteO aux = null;
+        for (ClienteO c :
+                data) {
+            if (c.getId() == id) {
+                aux = c;
+            }
+            data.remove(aux);
+    }
+
+    public String buscarCliente(ClienteO cliente) throws RemoteException {
         Optional<ClienteO> optionalCliente = data.stream()
                 .filter(c -> c.equals(cliente))
                 .findFirst();
-        return optionalCliente.orElseThrow( () ->
-                new RuntimeException("Não existe este cliente"));
+        return "Nao implementado";
+
     }
 
     public String listarCliente() throws RemoteException {
