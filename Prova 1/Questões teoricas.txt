@@ -1,0 +1,7 @@
+1 - Visto que o metodo a escolha do metodo para chamadas polimorficas é feito em tempo de execução, o JVM verifica por qual filho o metodo chama e então verifica o metodo sobreescrito por esse filho
+
+2 - O código mostra uma implementação que pode ser usada em sistemas que nao querem ficar verificando se o dado esta se repetindo e simplesmente auto incrementa para facilitar o trabalho
+
+3 -     compilando ~> javac Um.java Outro.java 
+	empacontando ~> jar --create --file Um.jar --main-class Um Um.class Outro.class
+	executando ~> java -jar 
